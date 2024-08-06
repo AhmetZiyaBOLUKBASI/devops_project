@@ -1,0 +1,23 @@
+#version: '3.7'
+
+services:
+  helloworld-app: # service name
+    container_name: openliberty
+    build: ./
+    restart: always # always runs
+    # Need'nt any persistent storage. Just example.
+    volumes:
+      - my-datas:/tmp/
+    # Need'nt any environment variables. Just example.
+    environment:
+      APP_VERSION: v1.1.9
+    ports:
+      - 8080:8080
+    networks:
+      - hello-world-app
+
+volumes:
+  my-datas:
+
+networks:
+  hello-world-app:
