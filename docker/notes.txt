@@ -1,0 +1,2 @@
+-  The java codes in this directory cloned https://github.com/dbelob/helloworld-web.git
+-  helloworld-web/helloworld-web-microprofile-openliberty folder is used
