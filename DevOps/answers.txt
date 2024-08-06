@@ -1,0 +1,98 @@
+Step-24: What is the DevOps cultural philosophy?
+  DevOps philosophy expresses the collaboration between developer and operation teams. Performance of developer teams are measured by launching new features in their applications. However, operation teams are responsible for ensuring up the systems all time. In modern IT, consumers expect to fix their issues right away so it causes conflict between developer and operation teams. DevOps philosophy try to fix that conflict by required modern tools as possible as low and quick.
+
+Step-25: What does DevOps stand for?
+  
+  DevOps term stands for development and operations.
+
+Step-26: Wha does Continuous Delivery/Deployment mean in DevOps?
+
+  Continious delivery/deployment means deploying the packeged codes after continuous integration process securely to production environment.
+
+Step-27: Define release phase in DevOps process. Define GitOps
+
+  Before release phase, plan, code, build, and test phase must be done suceessfully. In relaese phase, Ops part begins. For instance, codes were tested and dockerized, the container image puhes to a image registry before deploy in this phase.
+  GitOps covers code changes and infrastructure configuration automation.
+   
+Step-28: Define Agile DevOps term.
+
+  The Agile DevOps term is combination of agile and devops software development methodology. Agile DevOps contains phases like agile development, continuous integration, continuous dellivery and continuous testing. Agile DevOps aims to expedite the feedback loop between developers and operations teams.(https://agilefirst.io/agile-devops/)
+
+Step-29: Define Continuous Monitoring in Devops.
+
+  Continuous monitoring is the real-time observation and analysis of telemetry data to help optimize system performance. It encompasses alert configuration to notify teams of potential issues, promoting rapid response. Post-event investigations provide valuable insights to continuously optimize the monitoring process. By integrating artificial intelligence (AI) and machine learning (ML), continuous monitoring can achieve a higher level of precision and speed in detecting and responding to system issues.(https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/continuous-monitoring.html)
+
+Step-30: Define XML, Json, YAML, http, server JVM, JRE and JDK.
+
+  XML(Extensible Markup Language): A markup language. Not human readable easily. Usually uses by so old systems.
+  Json(JavaScript Object Notation): A data format for data transfer. More human readable than XML.
+  YAML(Yet Another markup Language): A data format for data transfer like json. Most human readable.
+  http(Hyper Text Transfer Protocol): A protocol that communicate between client and server. It is basement of internet.
+  JVM(Java Virtual Machine): Runs java code compiled to bytecode as .class file according to os platform (Windows, Linux, MacOs).
+  JRE(Java Runtime Environment): A software package that contains JVM and basic libraries to run java applications run successfully.
+  JDK(Java Development Kit): A kit for developing java applications. It contains JRE, compilers, debug tools etc.
+  server: In client-server architecture, a component of the network that provide information to other components called client.
+
+Step-31: Explain what is maven. What does clean install command provides in maven?
+
+  Maven is automation tool in languages like java, groovy, ruby etc. developed by apache. Maven uses a configuration file called POM.xml that contains necessary knowledge about project like name, dependencies, repos etc.
+  mvn clean install command clear cache memory and compiles the codes.
+  
+Step-32: Explain what is docker daemon and CLI.
+
+  Docker daemon is a docker component that is responsible for creating images and containers, managing network and storage etc. Docker CLI is a command line interface for communicating between user and docker daemon.
+
+Step-34: What is the use of the docker search nginx command?
+  
+  docker search nginx command provides searching nginx image in default registry (dockerhub).
+
+Step-35: What is the use of the docker pull nginx command?
+  
+  docker pull nginx command provides pulling nginx image from default registry (dockerhub).
+
+Step-36: Create a container from nginx image that its name is web_2, maps from 80 to 6666, runs in deteach mode and will removed after stop.
+
+  docker run --name web_2 -p 6666:80 --rm -d nginx
+
+Step-38: Explain what is sonarqube?
+
+  Sonarqube is an open source code qualty tool that makes static code analysis. We could use sonarqube either Software as a Service (SaaS) or self hosted in private infrastructure. We could bind sonarqube to pipelines to increase code quality by detecting bugs and code smells on many programming languages.
+
+Step-41: Explain what is GitLab?
+
+  GitLab is an open source DevOps tools what we could create CI/CD pipelines, use as remote code repository, write project documentations as wiki pages etc.
+
+Step-42: What is GitLab CI/CD?
+
+  GitLab CI/CD is a GitLab feature for creating continuous integration and continuous delivery/deploy pipelines hosted on GitLab Code repository.
+
+Step-43: What is GitLab Runner?
+
+  GitLab runner is an agent to run GitLab CI/CD pipelines. We could use the runners either in docker container or as a legacy software in the server.
+
+Step-44: What is SSH?
+
+  SSH (Secure Shell) is a cryptographic network protocol that provide network communication securely in an nonsecure network. Default SSH port is 22.
+
+Step-46: What is prometheus? What is jenkins?
+
+  Prometheus is a open source monitoring tool. In kubernetes environment usually is used for monitoring. It collects metrics from servers. It allows creating alerts and analyze historical system performance data to system admins. It is a graduated project of the Cloud Native Computing Foundation (CNCF).
+  Jenkins is also a open source tool that is used in continuous integration part of DevOps. It could build and test source code via pipelines. It has send notification feature in any fail situation. 
+
+Step-47: what is ansible?
+
+  Ansible is a open source configuration management automation tool. Ansible Automation Platform project of RedHat is fork of ansible. Ansible uses palybooks to automation and has a repo called ansible galaxy for its collections which used by users.
+
+Step-48: what is Kubernetes?
+
+  Kubernetes is a open source container orchestration platform. It manages container workloads in distributed clusters through objects like deployments, services, pods, ingress etc. 
+
+Step-49: What is Datadog?
+
+  Datadog is a application monitoring tool that run software as a service (SaaS). It allows creating alerts in a failures and analyze application performance data historically. 
+
+Step-50-51: Define kanban, scrum and waterfall.
+
+  All of them are used as project management methodology in software development.
+  Waterfall: Divides into different parts project. Each parts executed sequentially. Next part does not executes when previous part does not completed successfully.
+  

@@ -1,0 +1,35 @@
+Step-5: Define Git. What does SCM stand for? Define the best practise of git commits.
+
+  According to official documentation, Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. We use git as DevOps Engineer, to track our projects developmnet history, to show contributions, to recover the projects from unwanted failures or errors. (https://git-scm.com/)
+
+  SCM stands for Source Code Management.
+
+  - Commit Related Changes
+  - Commit Often
+  - Don't Commit Half-Done Work
+  - Test Your Code Before You Commit
+  - Write Good Commit Messages
+  - Use Branches
+  - Agree on A Workflow
+  
+  For details, you would read this(https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60)
+
+Step-7: What does Git Staged and Unstaged Area mean?
+
+  In git, it is called unstaged area where the files are untracked until git add <option> command. After git add <option> command, our project files are placed in staged area. When git commit <options> command used, the staged area ends and our changes lists in commit history. 
+
+Step-13: What is git GUI and Git CLI?
+
+  Git GUI, allows user to make all source code process through an graphical user interface. However, in Git CLI, users make all the process via command line interface .
+Step-16: What is Git Stash?
+  
+  Official page says about stash: "Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit." We use git stash in emergency tasks. (https://git-scm.com/docs/git-stash)
+
+Step-19: Define diffrences between git merge and git rebase.
+  
+  It could use to combine branches either git merge or git rebase. When git merge use to combine branches, we have more crowded commit history. In git merge, commit history is kept chronologically.
+  In git rebase, we have more linear commit history because It is not care chronological commit history. In addition, git rebase increases conflict possibility.
+
+Step-20: What does conflict mean in git. What should you do in conflict situation?
+
+  In conflict situation, it should determined which block cause the conflict in the source code. Usually, our text editors (VS Code, vim, etc) guides us to determine where the conflict source. Next step is to decide which code block will kept in the project. After that, developmnet process goes on by deleting wrong code block.
