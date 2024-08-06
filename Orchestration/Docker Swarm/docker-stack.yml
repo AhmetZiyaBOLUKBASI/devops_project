@@ -1,0 +1,25 @@
+# version: '3.7'
+services:
+  nginx:
+    image: nginx
+	  # One of diffences from docker compose is deploy key in docker stack
+	  deploy:
+	 	  replicas: 9
+	 	  update_config:
+	 	 	 parallelism: 2     # means update two by two
+	 	 	 delay: 5s          # means wait 5 seconds
+	 	 	 order: stop-first  # means first stop the container then upgrade
+    ports:
+      - "8080:80"
+    restart: always
+    networks:
+      - nginx-stack
+    # Need'nt any environment variables. Just example.
+    environment:
+      DB_SERVER: mysqldb
+      DB_USERNAME: projemaster
+      DB_PASS: master1234
+      DB_NAME: proje
+networks:
+  nginx-stack:
+    driver: overlay
